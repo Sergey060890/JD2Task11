@@ -74,12 +74,23 @@ public class EntityDaoImpl<T> implements EntityDao {
     }
 
     @Override
-    public void select() {
+    public Object getEntity(Class cl, Integer id) {
+        em = HibernateUtil.getEntityManager();
+        em.getTransaction().begin();
+        Object ob = em.find(cl, id);
+        em.getTransaction().commit();
+        em.close();
+        return ob;
+    }
+
+    @Override
+    public List select() {
         em = HibernateUtil.getEntityManager();
         String queryString = "SELECT e FROM " + clazz.getSimpleName() + " e";
         Query query = em.createQuery(queryString);
         List list = query.getResultList();
         list.forEach(System.out::println);
         em.close();
+        return list;
     }
 }

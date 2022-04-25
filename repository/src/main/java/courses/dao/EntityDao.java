@@ -1,7 +1,5 @@
 package courses.dao;
 
-import java.lang.reflect.InvocationTargetException;
-
 public interface EntityDao {
 
     <T> void insert(T object);
@@ -12,7 +10,9 @@ public interface EntityDao {
 
     <T> void update(T object);
 
-     <T> void updateById(int id,T object);
+    <T> void updateById(int id, T object);
 
-    void select();
+    Object getEntity(Class cl, Integer id);
+
+    Object select();
 }
