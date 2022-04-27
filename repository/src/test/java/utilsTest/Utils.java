@@ -1,4 +1,4 @@
-package courses;
+package utilsTest;
 
 import courses.entity.Course;
 import courses.entity.Mark;
@@ -8,7 +8,14 @@ import courses.entity.Teacher;
 
 import java.util.Set;
 
-import static courses.Constans.*;
+import static constans.ConstansCourse.*;
+import static constans.ConstansMark.MARK;
+import static constans.ConstansMark.MARK_REVIEW;
+import static constans.ConstansStudent.STUDENT_NAME;
+import static constans.ConstansStudent.STUDENT_SURNAME;
+import static constans.ConstansTask.TASK_DESCRIPTION;
+import static constans.ConstansTeacher.TEACHER_NAME;
+import static constans.ConstansTeacher.TEACHER_SURNAME;
 
 public class Utils {
     public static Course createCourse() {
