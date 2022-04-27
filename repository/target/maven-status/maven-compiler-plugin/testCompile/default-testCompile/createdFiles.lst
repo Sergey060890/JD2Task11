@@ -1,0 +1,12 @@
+constans\ConstansCourse.class
+constans\ConstansTask.class
+entityTest\MarkTest.class
+constans\ConstansTeacher.class
+entityTest\TeacherTest.class
+entityTest\CourseTest.class
+entityTest\StudentTest.class
+entityTest\TaskTest.class
+utilsTest\Utils.class
+constans\ConstansStudent.class
+constans\ConstansMark.class
+entityTest\AppTest.class
